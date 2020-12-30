@@ -193,7 +193,7 @@ jobs:
           working_directory: .circleci/ansible
           command: |
             ansible-playbook -i inventory.txt configure-server.yml
-      - destroy environment
+      
 
   run-migrations:
     docker:
